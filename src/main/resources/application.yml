@@ -1,0 +1,18 @@
+student:
+  userName: 张三${random.int}
+  sex: 男
+spring:
+  profiles:
+    active: dev
+---
+  student:
+    userName: 王五${random.int}
+    sex: 男
+  spring:
+    profiles: dev
+---
+student:
+  userName: 麻子${random.int}
+  sex: 女
+  spring:
+    profiles: prod
